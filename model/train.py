@@ -56,6 +56,8 @@ def test_model(model, test_type, X_to_test, y_to_test):
     print(test_type, "\r")
     print(report)
     print("")
+    
+    return report
 
 
 if __name__ == "__main__":
