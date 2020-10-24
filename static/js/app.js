@@ -43,4 +43,15 @@ function doCheckTicket(event) {
 function showResult(data) {
     console.log("showResult");
     console.log(data);
+    var outcome = "Unknown";
+
+    if (data[0] == 1) {
+        outcome = "Survived";
+    } else {
+        outcome = "Dead";
+    }
+
+    d3.select("#alertOutcome").text(outcome);
+
+
 }
