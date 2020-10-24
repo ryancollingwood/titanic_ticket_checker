@@ -5,3 +5,4 @@ Should you get onboard the Titanic? Simple project demonstrating putting a sklea
 
 ## Preprocessing
 [ ] Impute the missing values in the `age` column
+[ ] Better validation of inputs from form
