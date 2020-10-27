@@ -28,35 +28,48 @@
             <div class="form-row">
                 <div class="form-group col-md-3">
                     <label for="inputAge">Age</label>
-                    <input type="text" class="form-control" id="inputAge" placeholder="Age">
+                    <input type="number" class="form-control" id="inputAge" placeholder="Age">
                 </div>
                 <div class="form-group col-md-3">
                     <label for="inputGender">Gender</label>
-                    <input type="text" class="form-control" id="inputGender" placeholder="Gender">
+                    <select class="form-control" id="inputGender">
+                        <option>Female</option>
+                        <option>Male</option>
+                    </select>
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="inputPassengerClass">PassengerClass</label>
-                    <input type="text" class="form-control" id="inputPassengerClass" placeholder="PassengerClass">
+                    <label for="inputPassengerClass">Passenger Class</label>
+                    <select class="form-control" id="inputPassengerClass">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-3">
-                    <label for="inputNumberOfSiblings">NumberOfSiblings</label>
-                    <input type="text" class="form-control" id="inputNumberOfSiblings" placeholder="NumberOfSiblings">
+                    <label for="inputNumberOfSiblings">Number Of Siblings</label>
+                    <input type="number" class="form-control" id="inputNumberOfSiblings" placeholder="NumberOfSiblings">
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="inputNumberOfParents">NumberOfParents</label>
-                    <input type="text" class="form-control" id="inputNumberOfParents" placeholder="NumberOfParents">
+                    <label for="inputNumberOfParents">Number Of Parents</label>
+                    <input type="number" class="form-control" id="inputNumberOfParents" placeholder="NumberOfParents">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-3">
                     <label for="inputFare">Fare</label>
-                    <input type="text" class="form-control" id="inputFare" placeholder="Fare">
+                    <input type="number" class="form-control" id="inputFare" placeholder="Fare">
                 </div>
                 <div class="form-group col-md-3">
                     <label for="inputPortOfEmbarkment">PortOfEmbarkment</label>
-                    <input type="text" class="form-control" id="inputPortOfEmbarkment" placeholder="PortOfEmbarkment">
+                    <select class="form-control" id="inputPortOfEmbarkment">
+                        <option>S</option>
+                        <option>C</option>
+                        <option>Q</option>
+                    </select>
+
                 </div>
             </div>
             <button id="doCheckTicket" type="submit" class="btn btn-primary">Check My Ticket</button>
