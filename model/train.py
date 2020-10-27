@@ -3,6 +3,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 from joblib import dump, load
+from .persist import save_model, load_model
+
 
 MODEL_PATH = "model/trained_model.joblib"
 
@@ -30,12 +32,6 @@ def split_data(X, y):
 
 def train_model(model, X_train, y_train):
     model.fit(X_train, y_train)
-
-def save_model(model):
-    dump(model, MODEL_PATH)
-
-def load_model():
-    return load(MODEL_PATH)
 
 def get_model():
     return RandomForestClassifier(
