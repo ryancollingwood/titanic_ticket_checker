@@ -3,10 +3,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 from joblib import dump, load
-from .persist import save_model, load_model
+from persist import save_model, load_model
 
-
-MODEL_PATH = "model/trained_model.joblib"
 
 def load_data():
     """
