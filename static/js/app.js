@@ -2,8 +2,11 @@ console.log("App Ready");
 
 d3.select("#doCheckTicket").on("click", (event) => doCheckTicket(event));
 
+d3.select("#alertOutcome").style("display", "none");
+
 function doCheckTicket(event) {
     d3.event.preventDefault();
+    d3.select("#alertOutcome").style("display", "none");
     console.log("Checking Ticket");
 
     let age = d3.select("#inputAge").node().value;
@@ -45,14 +48,17 @@ function showResult(data) {
     console.log(data);
 
     var outcome = "Unknown";
+    let alertOutcomeDisplay = d3.select("#alertOutcome");
 
     if (data["result"][0] == 1) {
         outcome = "Survived";
+        alertOutcomeDisplay.attr("class", "alert alert-success");
     } else if (data["result"][0] == 0) {
         outcome = "Dead";
+        alertOutcomeDisplay.attr("class", "alert alert-info");
     }
 
-    d3.select("#alertOutcome").text(outcome);
-
+    alertOutcomeDisplay.text(outcome);
+    alertOutcomeDisplay.style("display", "block");
 
 }
