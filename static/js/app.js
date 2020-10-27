@@ -43,11 +43,12 @@ function doCheckTicket(event) {
 function showResult(data) {
     console.log("showResult");
     console.log(data);
+
     var outcome = "Unknown";
 
-    if (data[0] == 1) {
+    if (data["result"][0] == 1) {
         outcome = "Survived";
-    } else {
+    } else if (data["result"][0] == 0) {
         outcome = "Dead";
     }
 
