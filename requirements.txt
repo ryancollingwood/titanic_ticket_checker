@@ -2,3 +2,4 @@ pandas
 sklearn
 joblib
 gunicorn
+flask
